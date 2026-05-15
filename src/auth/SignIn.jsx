@@ -237,7 +237,7 @@ const QuizSignIn = () => {
                     <div className="text-center">
                         <p className="text-sm text-gray-500">
                             Don't have an account?{' '}
-                            <Link to="/signup" className="text-purple-500 font-semibold hover:text-indigo-600 hover:underline inline-flex items-center gap-1 group">
+                            <Link to="/login" className="text-purple-500 font-semibold hover:text-indigo-600 hover:underline inline-flex items-center gap-1 group">
                                 Create Account
                                 <ChevronRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                             </Link>

@@ -1,4 +1,4 @@
-import { Home, BookOpen, Trophy, Info, Phone, LogIn, Menu, X, ChevronRight, UserCircle, Brain, Sparkles } from 'lucide-react';
+import { Home, BookOpen, Trophy, Info, Phone, LogIn, Menu, X, ChevronRight, UserCircle, Brain, Sparkles, QuoteIcon } from 'lucide-react';
 import React, { useState, useEffect, use } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { AuthContext } from '../Context/Authcontext';
@@ -43,6 +43,7 @@ const QuizNavbar = () => {
         { name: 'addQuiz', path: '/addQuiz', icon: <Trophy size={18} /> },
         { name: 'DashBoard', path: '/dashboard', icon: <Info size={18} /> },
         { name: 'Contact', path: '/contact', icon: <Phone size={18} /> },
+        { name: 'Live Quiz', path: '/live-quiz', icon: <QuoteIcon size={18} /> },
     ];
 
     return (

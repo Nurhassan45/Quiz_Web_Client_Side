@@ -11,6 +11,10 @@ import QuizQuestions from './NavItem/Quizs/QuizCard';
 import QuizCreateForm from './NavItem/Quizs/QuizCreateForm';
 import Home from './shared/Home/Home';
 import Dashboard from './Dashboard/Dashboard';
+import LiveQuizList from './LiveQuiz/LiveQuizList';
+import LiveQuizLobby from './LiveQuiz/LiveQuizLobby';
+import JoinQuiz from './LiveQuiz/JoinQuiz';
+import LiveQuizPlay from './LiveQuiz/LiveQuizPlay';
 
 const router = createBrowserRouter([
     {
@@ -48,6 +52,22 @@ const router = createBrowserRouter([
             {
                 path:'addQuiz',
                 Component:QuizCreateForm,
+            },
+            {
+                path:'live-quiz',
+                Component:LiveQuizList,
+            },
+            {
+                path:'live-quiz/lobby',
+                Component:LiveQuizLobby,
+            },
+            {
+                path:'live-quiz/join',
+                Component:JoinQuiz
+            },
+            {
+                path:'/live-quiz/play/:roomId',
+                Component:LiveQuizPlay,
             }
         ]
     },
